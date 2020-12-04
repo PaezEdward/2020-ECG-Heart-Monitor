@@ -2,7 +2,6 @@
 // AUTHOR: Edward PAEZ
 // VERSION: 0.1.00
 // PURPOSE: two pins for two sensors demo
-// DATE: 2014-06-13
 // URL: https://github.com/PaezEdward/2020-ECG-Heart-Monitor.git
 
 #include <OneWire.h>
