@@ -50,7 +50,7 @@ int cont = 0;
 unsigned long previousMillis = 0;
 unsigned long currentMillis = 0;
 int Signal = 0;
-int Threshold = 2800;           //
+int Threshold = 2700;           //
 
 // Variables propres au OLED 128x64
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -138,7 +138,7 @@ void setup()
   Serial.println("Initialisation du programme");
   Blynk.begin(auth, ssid, pass);
   pinMode (ledPin, OUTPUT);
-  digitalWrite(ledPin, 0);;
+  digitalWrite(ledPin, 0);
   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
     Serial.println(F("SSD1306 allocation failed"));
     for (;;);
@@ -287,8 +287,8 @@ void TaskgetBPM(void *pvParameters) // This is a task.
       currentMillis = millis();
       digitalWrite(ledPin, HIGH);
       cont++;
-      Serial.println(cont);
-      vTaskDelay(250);
+      //Serial.println(cont);
+      vTaskDelay(150);
     }
     if (Signal <= Threshold)
     {
