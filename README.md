@@ -9,7 +9,7 @@ Ce projet porte sur la conception et le développement d'un petit prototype d'EC
 
 
 1. Cette conception est appuyée sur un ESP32 cadencé à 240 MHz.
-2. Le capteur SEN-KY039HS qui est basé sur une led à infrarouge et sur un phototransistor permettant la mesure des pulsations cardiaques (BPM).
+2. Le capteur SEN-KY039HS qui est basé sur un led à infrarouge et sur un phototransistor permettant la mesure des pulsations cardiaques (BPM).
 3. Un capteur de température DS18B20 via le protocole et bus 1-wire.
 4. Un serveur Blynk pour la transmission de données (TEMP et BMP).
 5. L'affichage aussi sur un écran OLED via le protocole SPI.
